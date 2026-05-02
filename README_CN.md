@@ -81,13 +81,12 @@ bash scripts/test-all.sh
 DoraHacks 提交材料位于：
 
 - `docs/HACKATHON_SUBMISSION.md`
-- `docs/OPTIONAL_DEMO_SCRIPT.md`
 - `docs/EVALUATION.md`
+- `docs/JUDGE_GUIDE.md`
 
 提交前需要人工补充：
 
 - GitHub repo URL
-- 如果提交表单要求视频，可补充可选演示视频
 - DoraHacks 项目页由 DoraHacks 提交流程生成，不作为仓库占位材料
 
 本项目可以独立开源到 GitHub。仓库只包含示例配置和占位值，不包含真实密钥、真实账号 ID 或真实部署结果。

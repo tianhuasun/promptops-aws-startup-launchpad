@@ -75,12 +75,11 @@ The project does not claim that infrastructure has already been deployed. It is 
 
 1. Open `README.md`.
 2. Open `docs/JUDGE_GUIDE.md`.
-3. Open `docs/REVIEW_WITHOUT_VIDEO.md`.
-4. Inspect `prompt/master-prompt.md`.
-5. Inspect `prompt/user-input-template.md`.
-6. Review `examples/nextjs-fastapi-postgres/expected-output/architecture.md`.
-7. Review `terraform/examples/nextjs-fastapi-postgres/main.tf`.
-8. Run `bash scripts/test-all.sh` for local validation.
+3. Inspect `prompt/master-prompt.md`.
+4. Inspect `prompt/user-input-template.md`.
+5. Review `examples/nextjs-fastapi-postgres/expected-output/architecture.md`.
+6. Review `terraform/examples/nextjs-fastapi-postgres/main.tf`.
+7. Run `bash scripts/test-all.sh` for local validation.
 
 The validation scripts do not create AWS resources and do not require real AWS credentials.
 
@@ -91,10 +90,6 @@ https://github.com/tianhuasun/promptops-aws-startup-launchpad
 ## Website URL
 
 https://github.com/tianhuasun/promptops-aws-startup-launchpad
-
-## Demo Video
-
-No demo video is included by default. The repository is structured for direct review through README.md, docs/JUDGE_GUIDE.md, and prompt/master-prompt.md.
 
 ## Future Roadmap
 

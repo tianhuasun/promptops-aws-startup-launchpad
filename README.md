@@ -14,12 +14,12 @@ The repository is designed for direct GitHub review. It does not require real AW
 - **Context & Documentation:** [`prompt/`](prompt), [`docs/`](docs), [`examples/`](examples)
 - **AWS Services & Best Practices:** [`terraform/`](terraform), [`docs/AWS_WELL_ARCHITECTED_MAPPING.md`](docs/AWS_WELL_ARCHITECTED_MAPPING.md)
 - **Judge Guide:** [`docs/JUDGE_GUIDE.md`](docs/JUDGE_GUIDE.md)
-- **Review Without Video:** [`docs/REVIEW_WITHOUT_VIDEO.md`](docs/REVIEW_WITHOUT_VIDEO.md)
+- **Repository-first Review:** [`docs/JUDGE_GUIDE.md#repository-first-review-path`](docs/JUDGE_GUIDE.md#repository-first-review-path)
 - **Validation:** `bash scripts/test-all.sh`
 
 Primary scenario: **Next.js + FastAPI + PostgreSQL on AWS**, using App Runner, RDS PostgreSQL, S3, CloudFront, Secrets Manager, CloudWatch, AWS Budgets, and Terraform.
 
-Reviewers can evaluate the project through the repository-first path. A video is not part of the main review flow.
+Reviewers can evaluate the project through the repository-first path in the judge guide.
 
 ## What This Solves
 
@@ -43,7 +43,7 @@ No real AWS resources are created by this repository or its validation scripts.
 - `prompt/`: the complete prompt kit, including master prompt, system prompt, input template, output schema, validation checklist, and safety rules.
 - `examples/`: expected outputs for three AWS startup scenarios.
 - `terraform/`: example modules and a composed Next.js + FastAPI + PostgreSQL infrastructure plan.
-- `docs/`: judge guide, repository-first review path, design notes, Well-Architected mapping, security baseline, cost controls, troubleshooting, optional demo script, and DoraHacks submission copy.
+- `docs/`: judge guide, design notes, Well-Architected mapping, security baseline, cost controls, troubleshooting, evaluation notes, roadmap, and DoraHacks submission copy.
 - `tests/`: prompt evaluation cases and expected-output checklists.
 - `scripts/`: local validation scripts that do not deploy AWS resources.
 
@@ -257,7 +257,7 @@ The prompt output is acceptable only when it includes:
 - Terraform examples are designed for static review and formatting validation first.
 - Cost estimates are planning estimates, not AWS billing guarantees.
 - Production environments still require security review, account review, and workload-specific hardening.
-- An optional script is available in [`docs/OPTIONAL_DEMO_SCRIPT.md`](docs/OPTIONAL_DEMO_SCRIPT.md) if a submission form requests a video. The primary review path is the GitHub repository.
+- The primary review path is the GitHub repository and the files linked in the judge guide.
 
 ## References
 
