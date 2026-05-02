@@ -1,0 +1,14 @@
+aws_region                = "us-east-1"
+project_name              = "promptops-demo"
+environment               = "dev"
+monthly_budget_usd        = 50
+budget_alert_email        = "replace-me@example.com"
+domain_name               = "example.com"
+static_assets_bucket_name = "promptops-demo-static-assets-placeholder"
+database_name             = "appdb"
+database_username         = "app_admin"
+rds_instance_class        = "db.t4g.micro"
+backup_retention_days     = 7
+deletion_protection       = false
+skip_final_snapshot       = false
+api_image_identifier      = "public.ecr.aws/TODO_REPLACE_WITH_PUBLIC_ECR_ALIAS/promptops-api:latest"
