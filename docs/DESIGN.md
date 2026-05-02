@@ -55,7 +55,7 @@ The prompt explicitly prohibits fabricated:
 - App Runner service URLs
 - Demo URLs
 
-Unknown values must be marked as `TODO` or placeholders. This keeps generated output auditable.
+Unknown values must be marked clearly instead of being invented. This keeps generated output auditable.
 
 ## Keeping Output Reviewable
 

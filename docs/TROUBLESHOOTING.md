@@ -42,7 +42,7 @@ Likely cause: no local AWS CLI profile or environment credentials are configured
 Check:
 
 ```bash
-aws sts get-caller-identity --profile YOUR_PROFILE
+aws sts get-caller-identity --profile <profile-name>
 ```
 
 Safe remediation: configure an AWS profile locally. Do not paste access keys into prompts, code, or chat.
@@ -143,7 +143,7 @@ Safe remediation: grant read access to CloudFront OAC only. Do not make the buck
 
 Likely causes:
 
-- Alert email is still a placeholder.
+- Alert email is still the sample value.
 - Email confirmation was not completed.
 - Budget threshold has not been crossed.
 
@@ -153,7 +153,7 @@ Checks:
 - Confirm the email recipient.
 - Check spam filtering.
 
-Safe remediation: replace the placeholder with a real monitored email before deployment.
+Safe remediation: replace the sample value with a real monitored email before deployment.
 
 ## Secrets Manager Access Denied
 

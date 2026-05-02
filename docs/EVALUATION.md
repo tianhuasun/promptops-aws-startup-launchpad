@@ -12,7 +12,7 @@ Use this rubric to evaluate AI output generated with PromptOps AWS Startup Launc
 
 - Are deployment steps concrete?
 - Are validation steps provided?
-- Are placeholders clearly marked?
+- Are missing or account-specific values clearly marked?
 - Are next steps obvious?
 
 ## Production Readiness
@@ -49,7 +49,7 @@ Use this rubric to evaluate AI output generated with PromptOps AWS Startup Launc
 - Can another reviewer follow the same steps?
 - Is the Terraform structure stable?
 - Are validation commands included?
-- Are unknown account-specific values written as `TODO`?
+- Are unknown account-specific values clearly marked instead of invented?
 
 ## Troubleshooting Quality
 

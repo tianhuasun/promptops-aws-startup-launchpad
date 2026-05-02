@@ -100,7 +100,8 @@ require_text "docs/HACKATHON_SUBMISSION.md" "Project Name" "submission has Proje
 require_text "docs/HACKATHON_SUBMISSION.md" "One-Liner" "submission has One-liner"
 require_text "docs/HACKATHON_SUBMISSION.md" "Problem" "submission has Problem"
 require_text "docs/HACKATHON_SUBMISSION.md" "Solution" "submission has Solution"
-require_text "docs/HACKATHON_SUBMISSION.md" "Demo Instructions" "submission has Demo instructions"
+require_text "docs/HACKATHON_SUBMISSION.md" "Repository Review Path" "submission has repository review path"
+require_text "docs/HACKATHON_SUBMISSION.md" "Repository URL" "submission has repository URL"
 
 if [[ "$failures" -eq 0 ]]; then
   info "Documentation validation passed"

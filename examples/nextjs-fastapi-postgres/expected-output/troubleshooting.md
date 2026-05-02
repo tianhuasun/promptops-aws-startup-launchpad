@@ -20,7 +20,7 @@ Likely cause: no local AWS profile is configured.
 Check:
 
 ```bash
-aws sts get-caller-identity --profile YOUR_PROFILE
+aws sts get-caller-identity --profile <profile-name>
 ```
 
 Configure a local AWS profile. Do not paste AWS keys into the prompt.
@@ -45,6 +45,6 @@ Review bucket policy and CloudFront OAC settings. Do not make the bucket public.
 
 ## Budget Alert Not Received
 
-Likely cause: placeholder email, unconfirmed email, or threshold not reached.
+Likely cause: sample email, unconfirmed email, or threshold not reached.
 
-Replace the placeholder email before deployment and verify the alert recipient.
+Replace the sample email before deployment and verify the alert recipient.

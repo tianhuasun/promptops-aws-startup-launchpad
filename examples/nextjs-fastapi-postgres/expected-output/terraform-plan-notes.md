@@ -37,7 +37,7 @@ Creates a private encrypted S3 bucket. Public access is blocked.
 
 ### cloudfront
 
-Creates CloudFront distribution with S3 Origin Access Control. Custom domain and ACM certificate remain placeholders until supplied by the user.
+Creates CloudFront distribution with S3 Origin Access Control. Custom domain and ACM certificate remain missing values until supplied by the user.
 
 ### apprunner_service
 

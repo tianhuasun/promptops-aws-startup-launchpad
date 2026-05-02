@@ -37,7 +37,7 @@ CloudWatch logs must be included for application and database observability. Log
 
 ## Budget Alerts
 
-AWS Budgets must be included as a safety control. The alert email in examples is a placeholder and must be replaced before real deployment.
+AWS Budgets must be included as a safety control. The alert email in examples is a sample value and must be replaced before real deployment.
 
 ## Human Confirmation Before Deployment
 

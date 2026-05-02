@@ -16,7 +16,7 @@ ci_cd_required: true
 auth_required: true
 file_upload_required: true
 compliance_level: "baseline startup security, no regulated workloads yet"
-deployment_mode: "development MVP first, production-ready structure"
+deployment_mode: "development MVP first, deployment-aware structure"
 preferred_runtime: "AWS App Runner"
 observability_level: "basic CloudWatch logs, budget alerts, service health checks"
 teardown_required: true

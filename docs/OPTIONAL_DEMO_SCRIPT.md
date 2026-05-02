@@ -8,7 +8,7 @@ Use this as a direct 2-3 minute voiceover script if needed. It should show local
 
 Hi, this is PromptOps AWS Startup Launchpad, my submission for the DoraHacks AWS Prompt the Planet Challenge.
 
-It is not a chatbot or a web demo. It is a production-ready AWS prompt kit that helps founders and developers use AI coding agents to generate secure, cost-aware, human-reviewable AWS MVP infrastructure plans.
+It is not a chatbot or a web demo. It is a structured AWS prompt kit that helps founders and developers use AI coding agents to generate secure, cost-aware, human-reviewable AWS MVP infrastructure plans.
 
 ## 0:10-0:30 README
 
@@ -32,7 +32,7 @@ The important point is that the agent is not allowed to ask for real AWS secret 
 
 Next I am opening `prompt/user-input-template.md`.
 
-This is what a founder fills in: project name, frontend framework, backend framework, database, AWS region, monthly budget, expected users, domain placeholder, CI/CD needs, auth needs, compliance level, deployment mode, preferred runtime, observability level, and teardown requirements.
+This is what a founder fills in: project name, frontend framework, backend framework, database, AWS region, monthly budget, expected users, sample domain, CI/CD needs, auth needs, compliance level, deployment mode, preferred runtime, observability level, and teardown requirements.
 
 It explicitly tells users not to include AWS keys, tokens, passwords, private certificates, or real `.env` contents.
 

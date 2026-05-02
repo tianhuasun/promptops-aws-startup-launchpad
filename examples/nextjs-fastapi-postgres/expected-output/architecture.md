@@ -8,8 +8,8 @@ This MVP uses AWS managed services to launch a Next.js + FastAPI + PostgreSQL ap
 
 - Region: `us-east-1`
 - Monthly budget: `50 USD`
-- Environment: development MVP with production-ready structure
-- Custom domain: `example.com` placeholder only
+- Environment: development MVP with deployment-aware structure
+- Custom domain: `example.com` sample value only
 - No regulated workload is assumed
 - No real AWS Account ID, ARN, certificate ARN, Hosted Zone ID, or secret value is known
 

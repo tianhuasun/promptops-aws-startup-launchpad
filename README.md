@@ -2,36 +2,30 @@
 
 **DoraHacks AWS Prompt the Planet Challenge submission**
 
-**PromptOps AWS Startup Launchpad** is a production-ready AWS Prompt Kit that helps founders, indie hackers, and developers use AI coding agents to generate reviewable AWS MVP infrastructure plans with Terraform, security guardrails, budget controls, rollback steps, and troubleshooting runbooks.
+**PromptOps AWS Startup Launchpad** is a structured AWS prompt kit for planning and reviewing MVP infrastructure with an AI coding agent.
 
-This is not a chatbot, landing page, or toy app. It is a complete prompt package for a real AWS task: taking a startup MVP idea and turning it into a safe, cost-aware, human-reviewable AWS launch plan.
+The core deliverable is [`prompt/master-prompt.md`](prompt/master-prompt.md). It guides an agent to produce an AWS architecture, Terraform plan, safety checks, cost controls, rollback steps, and troubleshooting notes for a typical startup stack.
+
+The repository is designed for direct GitHub review. It does not require real AWS credentials, and its validation scripts do not create AWS resources.
 
 ## 30-Second Review
 
-| Item | Summary |
-| --- | --- |
-| Challenge | DoraHacks AWS Prompt the Planet Challenge |
-| Artifact | Production-ready AWS prompt kit |
-| Complete Prompt | [`prompt/master-prompt.md`](prompt/master-prompt.md) |
-| Context & Documentation | [`prompt/`](prompt), [`docs/`](docs), [`examples/`](examples) |
-| AWS Services & Best Practices | [`terraform/`](terraform), [`docs/AWS_WELL_ARCHITECTED_MAPPING.md`](docs/AWS_WELL_ARCHITECTED_MAPPING.md) |
-| Main file | [`prompt/master-prompt.md`](prompt/master-prompt.md) |
-| Primary use case | Next.js + FastAPI + PostgreSQL MVP on AWS |
-| Target users | Startup founders, indie hackers, student builders, AI coding agent users |
-| AWS focus | App Runner, RDS PostgreSQL, S3, CloudFront, Secrets Manager, CloudWatch, Budgets, Terraform |
-| Safety model | No real secrets, no public database by default, no fake AWS IDs, human approval before real deployment |
-| Validation | `bash scripts/test-all.sh` |
-| Repository | https://github.com/tianhuasun/promptops-aws-startup-launchpad |
-| Judge guide | [`docs/JUDGE_GUIDE.md`](docs/JUDGE_GUIDE.md) |
-| Repository-first review | [`docs/REVIEW_WITHOUT_VIDEO.md`](docs/REVIEW_WITHOUT_VIDEO.md) |
+- **Complete Prompt:** [`prompt/master-prompt.md`](prompt/master-prompt.md)
+- **Context & Documentation:** [`prompt/`](prompt), [`docs/`](docs), [`examples/`](examples)
+- **AWS Services & Best Practices:** [`terraform/`](terraform), [`docs/AWS_WELL_ARCHITECTED_MAPPING.md`](docs/AWS_WELL_ARCHITECTED_MAPPING.md)
+- **Judge Guide:** [`docs/JUDGE_GUIDE.md`](docs/JUDGE_GUIDE.md)
+- **Review Without Video:** [`docs/REVIEW_WITHOUT_VIDEO.md`](docs/REVIEW_WITHOUT_VIDEO.md)
+- **Validation:** `bash scripts/test-all.sh`
 
-If no demo video is provided, judges can still review the complete prompt kit through the repository-first review path in [`docs/REVIEW_WITHOUT_VIDEO.md`](docs/REVIEW_WITHOUT_VIDEO.md). The repository itself contains the complete prompt, context documentation, AWS service mapping, examples, and validation scripts needed for review.
+Primary scenario: **Next.js + FastAPI + PostgreSQL on AWS**, using App Runner, RDS PostgreSQL, S3, CloudFront, Secrets Manager, CloudWatch, AWS Budgets, and Terraform.
+
+Reviewers can evaluate the project through the repository-first path. A video is not part of the main review flow.
 
 ## What This Solves
 
 AI coding agents are good at generating cloud code, but unguided prompts can produce risky infrastructure: public databases, missing budgets, hardcoded secrets, fake ARNs, unclear rollback paths, or deployment steps that cannot be audited.
 
-PromptOps gives the agent a strict operating contract. It forces the output to include assumptions, AWS architecture, Terraform plans, security baselines, cost guardrails, human approval gates, rollback steps, troubleshooting tips, and AWS Well-Architected alignment.
+PromptOps gives the agent a stricter operating contract. The output must include assumptions, AWS architecture, Terraform plans, security baselines, cost guardrails, human approval gates, rollback steps, troubleshooting tips, and AWS Well-Architected alignment.
 
 ## Quick Start For Judges
 
@@ -55,7 +49,7 @@ No real AWS resources are created by this repository or its validation scripts.
 
 ## Why It Fits AWS Startups
 
-Startup teams need a launch path that is fast, understandable, and hard to misuse. This kit defaults to managed AWS services, keeps the database private, requires Secrets Manager and CloudWatch, includes AWS Budgets, avoids NAT Gateway by default for low-budget MVPs, and keeps every billable or destructive action behind a human approval gate.
+Startup teams often know their application stack but have less confidence in AWS infrastructure planning. This kit defaults to managed AWS services, keeps the database private, requires Secrets Manager and CloudWatch, includes AWS Budgets, avoids NAT Gateway by default for low-budget MVPs, and keeps billable or destructive actions behind a human approval gate.
 
 ## Project Overview
 
@@ -78,7 +72,7 @@ The output is designed to be reviewed before any real AWS deployment happens. It
 
 Many startup teams can build products faster than they can safely operate cloud infrastructure. AI coding agents can help, but an unguided agent may hallucinate resource IDs, skip budget alerts, expose databases, or produce deployment steps that are difficult to audit.
 
-This prompt kit turns the agent into a disciplined AWS launch assistant. It requires assumptions, architecture, Terraform plans, security baselines, cost guardrails, rollback steps, and troubleshooting guidance.
+This prompt kit makes the agent produce a reviewable AWS launch package instead of loose cloud advice. It requires assumptions, architecture, Terraform plans, security baselines, cost guardrails, rollback steps, and troubleshooting guidance.
 
 ## Hackathon Fit
 
@@ -145,7 +139,7 @@ The input template includes:
 - `teardown_required`
 - `notes`
 
-Use `.env.example` and `terraform.tfvars.example` as placeholders only. Do not commit real `.env` files or secrets.
+Use `.env.example` and `terraform.tfvars.example` as sample files only. Do not commit real `.env` files or secrets.
 
 ## Expected Output
 
@@ -263,7 +257,7 @@ The prompt output is acceptable only when it includes:
 - Terraform examples are designed for static review and formatting validation first.
 - Cost estimates are planning estimates, not AWS billing guarantees.
 - Production environments still require security review, account review, and workload-specific hardening.
-- An optional script is available in [`docs/OPTIONAL_DEMO_SCRIPT.md`](docs/OPTIONAL_DEMO_SCRIPT.md) if a submission form requests a video, but the primary review path is the GitHub repository.
+- An optional script is available in [`docs/OPTIONAL_DEMO_SCRIPT.md`](docs/OPTIONAL_DEMO_SCRIPT.md) if a submission form requests a video. The primary review path is the GitHub repository.
 
 ## References
 
@@ -279,4 +273,4 @@ The prompt output is acceptable only when it includes:
 
 ## Submission Summary
 
-PromptOps AWS Startup Launchpad is a complete AWS Prompt Kit for generating secure, cost-aware, reviewable MVP infrastructure with AI coding agents. Its master prompt, examples, Terraform modules, validation scripts, and submission copy are ready for open-source publication and DoraHacks review.
+PromptOps AWS Startup Launchpad is a structured AWS prompt kit for generating secure, cost-aware, reviewable MVP infrastructure plans with AI coding agents. Its master prompt, examples, Terraform modules, validation scripts, and submission copy are ready for DoraHacks review.
