@@ -19,6 +19,10 @@ This is not a chatbot, landing page, or toy app. It is a complete prompt package
 | Safety model | No real secrets, no public database by default, no fake AWS IDs, human approval before real deployment |
 | Validation | `bash scripts/test-all.sh` |
 | Repository | https://github.com/tianhuasun/promptops-aws-startup-launchpad |
+| Judge guide | [`docs/JUDGE_GUIDE.md`](docs/JUDGE_GUIDE.md) |
+| Repository-first review | [`docs/REVIEW_WITHOUT_VIDEO.md`](docs/REVIEW_WITHOUT_VIDEO.md) |
+
+If no demo video is provided, judges can still review the complete prompt kit through the repository-first review path in [`docs/REVIEW_WITHOUT_VIDEO.md`](docs/REVIEW_WITHOUT_VIDEO.md). A video can be added later if the submission form requires it.
 
 ## What This Solves
 

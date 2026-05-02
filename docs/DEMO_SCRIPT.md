@@ -1,6 +1,8 @@
-# 2-3 Minute Demo Script
+# Optional Demo Script
 
-Use this as a direct voiceover script for the DoraHacks demo recording. The demo should show local files only and should not create AWS resources.
+This script is provided in case a video is requested by the submission form or the team chooses to record one. The repository is designed to be reviewable directly from GitHub.
+
+Use this as a direct 2-3 minute voiceover script for the DoraHacks demo recording. The demo should show local files only and should not create AWS resources.
 
 ## 0:00-0:10 Opening
 

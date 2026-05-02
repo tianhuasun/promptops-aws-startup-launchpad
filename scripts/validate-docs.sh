@@ -53,6 +53,8 @@ required_files=(
   "docs/TROUBLESHOOTING.md"
   "docs/DEMO_SCRIPT.md"
   "docs/HACKATHON_SUBMISSION.md"
+  "docs/JUDGE_GUIDE.md"
+  "docs/REVIEW_WITHOUT_VIDEO.md"
   "docs/EVALUATION.md"
   "docs/ROADMAP.md"
   "tests/prompt-evaluation-cases.md"
