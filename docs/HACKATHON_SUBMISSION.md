@@ -1,12 +1,14 @@
 # DoraHacks Submission Copy
 
+Copy the sections below into the DoraHacks submission form. Replace only the URL placeholders that are still marked as `TODO`.
+
 ## Project Name
 
 PromptOps AWS Startup Launchpad
 
 ## One-Liner
 
-PromptOps AWS Startup Launchpad is a production-ready prompt kit that helps founders and developers use AI coding agents to design, generate, validate, and deploy secure, cost-controlled AWS MVP infrastructure.
+PromptOps AWS Startup Launchpad is a production-ready AWS prompt kit that helps founders and developers use AI coding agents to generate secure, cost-aware, human-reviewable MVP infrastructure plans.
 
 ## Problem
 
@@ -39,15 +41,15 @@ The master prompt instructs an AI coding agent to generate a full AWS launch pac
 
 The challenge asks for complete prompts that help users accomplish real AWS tasks with prerequisites, use cases, expected outcomes, troubleshooting, and alignment with AWS best practices.
 
-This submission is designed exactly for that: it is a verbatim, reusable prompt package that helps users generate reviewable AWS MVP infrastructure while following AWS Well-Architected principles.
+This submission is designed exactly for that: it is a verbatim, reusable prompt package that helps users generate reviewable AWS MVP infrastructure plans while following AWS Well-Architected principles. The main artifact can be copied directly into an AI coding agent and evaluated against the included examples and validation checklist.
 
 ## How The Prompt Works
 
 1. The user fills in a non-secret input template.
-2. The master prompt applies strict safety, cost, and architecture rules.
+2. The master prompt checks prerequisites, use case, assumptions, and missing values.
 3. The AI coding agent produces a structured AWS launch package.
-4. The user reviews Terraform, cost, security, rollback, and troubleshooting.
-5. Human approval is required before any real deployment.
+4. The user reviews Terraform, cost, security, rollback, troubleshooting, and AWS Well-Architected alignment.
+5. Human approval is required before any real deployment or destructive action.
 
 The prompt explicitly forbids asking for real AWS keys, using the root account, exposing databases publicly, opening database ingress to `0.0.0.0/0`, hardcoding passwords, skipping budgets or logs, and inventing AWS Account IDs, ARNs, CloudFront domains, Hosted Zone IDs, or Certificate ARNs.
 
@@ -64,6 +66,10 @@ The prompt explicitly forbids asking for real AWS keys, using the root account, 
 - Terraform AWS provider
 - Optional GitHub Actions workflow planning
 
+## Expected Outcome
+
+The expected output is a reviewable AWS MVP launch package, not a claim that infrastructure has already been deployed. It should give a founder enough structure to understand the proposed architecture, review Terraform changes, estimate cost risk, and decide whether to proceed with a real AWS deployment after human approval.
+
 ## Safety And Cost Controls
 
 - No real secrets in prompts, examples, commits, or outputs.
@@ -78,6 +84,8 @@ The prompt explicitly forbids asking for real AWS keys, using the root account, 
 - NAT Gateway avoided by default to prevent surprise cost.
 - Finite log retention.
 - Human approval gates before `terraform apply`, `terraform destroy`, DNS changes, production database changes, or budget increases.
+- Cost estimates are planning ranges, not billing guarantees.
+- Unknown account-specific values are written as `TODO` rather than fabricated.
 
 ## Demo Instructions
 
@@ -93,15 +101,15 @@ No real AWS resources are created during the demo.
 
 ## GitHub URL
 
-TODO: https://github.com/your-org/promptops-aws-startup-launchpad
+https://github.com/tianhuasun/promptops-aws-startup-launchpad
 
-## Video URL
+## Demo Video URL
 
-TODO: https://example.com/promptops-demo-video
+TODO: add demo video URL after recording
 
 ## DoraHacks BUIDL URL
 
-TODO: https://dorahacks.io/buidl/...
+TODO: add DoraHacks BUIDL URL after submission page is created
 
 ## Future Roadmap
 

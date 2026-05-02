@@ -1,8 +1,54 @@
 # PromptOps AWS Startup Launchpad
 
-**PromptOps AWS Startup Launchpad** is a production-ready AWS Prompt Kit that helps founders and developers use AI coding agents to design, generate, validate, and deploy secure, cost-controlled AWS MVP infrastructure.
+**DoraHacks AWS Prompt the Planet Challenge submission**
 
-It is built for the DoraHacks AWS Prompt the Planet Challenge as a complete prompt package, not a chatbot or ordinary demo app.
+**PromptOps AWS Startup Launchpad** is a production-ready AWS Prompt Kit that helps founders, indie hackers, and developers use AI coding agents to generate reviewable AWS MVP infrastructure plans with Terraform, security guardrails, budget controls, rollback steps, and troubleshooting runbooks.
+
+This is not a chatbot, landing page, or toy app. It is a complete prompt package for a real AWS task: taking a startup MVP idea and turning it into a safe, cost-aware, human-reviewable AWS launch plan.
+
+## 30-Second Review
+
+| Item | Summary |
+| --- | --- |
+| Challenge | DoraHacks AWS Prompt the Planet Challenge |
+| Artifact | Production-ready AWS prompt kit |
+| Main file | [`prompt/master-prompt.md`](prompt/master-prompt.md) |
+| Primary use case | Next.js + FastAPI + PostgreSQL MVP on AWS |
+| Target users | Startup founders, indie hackers, student builders, AI coding agent users |
+| AWS focus | App Runner, RDS PostgreSQL, S3, CloudFront, Secrets Manager, CloudWatch, Budgets, Terraform |
+| Safety model | No real secrets, no public database by default, no fake AWS IDs, human approval before real deployment |
+| Validation | `bash scripts/test-all.sh` |
+| Repository | https://github.com/tianhuasun/promptops-aws-startup-launchpad |
+
+## What This Solves
+
+AI coding agents are good at generating cloud code, but unguided prompts can produce risky infrastructure: public databases, missing budgets, hardcoded secrets, fake ARNs, unclear rollback paths, or deployment steps that cannot be audited.
+
+PromptOps gives the agent a strict operating contract. It forces the output to include assumptions, AWS architecture, Terraform plans, security baselines, cost guardrails, human approval gates, rollback steps, troubleshooting tips, and AWS Well-Architected alignment.
+
+## Quick Start For Judges
+
+1. Open [`prompt/master-prompt.md`](prompt/master-prompt.md).
+2. Copy it verbatim into an AI coding agent.
+3. Fill [`prompt/user-input-template.md`](prompt/user-input-template.md) with non-secret MVP requirements.
+4. Compare the result with [`examples/nextjs-fastapi-postgres/expected-output`](examples/nextjs-fastapi-postgres/expected-output).
+5. Review the Terraform example in [`terraform/examples/nextjs-fastapi-postgres`](terraform/examples/nextjs-fastapi-postgres).
+6. Run `bash scripts/test-all.sh` for local documentation and static validation.
+
+No real AWS resources are created by this repository or its validation scripts.
+
+## What's Inside
+
+- `prompt/`: the complete prompt kit, including master prompt, system prompt, input template, output schema, validation checklist, and safety rules.
+- `examples/`: expected outputs for three AWS startup scenarios.
+- `terraform/`: example modules and a composed Next.js + FastAPI + PostgreSQL infrastructure plan.
+- `docs/`: design notes, Well-Architected mapping, security baseline, cost controls, troubleshooting, demo script, and DoraHacks submission copy.
+- `tests/`: prompt evaluation cases and expected-output checklists.
+- `scripts/`: local validation scripts that do not deploy AWS resources.
+
+## Why It Fits AWS Startups
+
+Startup teams need a launch path that is fast, understandable, and hard to misuse. This kit defaults to managed AWS services, keeps the database private, requires Secrets Manager and CloudWatch, includes AWS Budgets, avoids NAT Gateway by default for low-budget MVPs, and keeps every billable or destructive action behind a human approval gate.
 
 ## Project Overview
 
@@ -19,7 +65,7 @@ The kit gives an AI coding agent a strict operating model for a common startup s
 - Terraform IaC
 - AWS App Runner as the default MVP runtime
 
-The output is designed to be reviewed before any real AWS deployment happens.
+The output is designed to be reviewed before any real AWS deployment happens. It is a proposal and generation framework, not proof that any AWS account has been deployed.
 
 ## Why This Prompt Matters
 
@@ -225,7 +271,7 @@ See [`docs/DEMO_SCRIPT.md`](docs/DEMO_SCRIPT.md).
 - Terraform examples are designed for static review and formatting validation first.
 - Cost estimates are planning estimates, not AWS billing guarantees.
 - Production environments still require security review, account review, and workload-specific hardening.
-- GitHub URL, demo video URL, and DoraHacks BUIDL URL are placeholders until the user publishes them.
+- Demo video URL and DoraHacks BUIDL URL remain placeholders until the user publishes them.
 
 ## References
 

@@ -70,6 +70,9 @@ done
 info "Checking master prompt sections"
 require_text "prompt/master-prompt.md" "^## Role" "master prompt has Role"
 require_text "prompt/master-prompt.md" "^## Mission" "master prompt has Mission"
+require_text "prompt/master-prompt.md" "^## Use Case" "master prompt has use case"
+require_text "prompt/master-prompt.md" "^## Prerequisites" "master prompt has prerequisites"
+require_text "prompt/master-prompt.md" "^## Expected Outcome" "master prompt has expected outcome"
 require_text "prompt/master-prompt.md" "Input Requirements" "master prompt has input requirements"
 require_text "prompt/master-prompt.md" "Clarifying Questions" "master prompt has clarifying questions"
 require_text "prompt/master-prompt.md" "Assumptions Policy" "master prompt has assumptions policy"
@@ -77,6 +80,7 @@ require_text "prompt/master-prompt.md" "Output Contract" "master prompt has outp
 require_text "prompt/master-prompt.md" "Terraform Generation Rules" "master prompt has Terraform rules"
 require_text "prompt/master-prompt.md" "Security Rules" "master prompt has security rules"
 require_text "prompt/master-prompt.md" "Cost Control Rules" "master prompt has cost rules"
+require_text "prompt/master-prompt.md" "AWS Well-Architected Alignment" "master prompt has Well-Architected alignment"
 require_text "prompt/master-prompt.md" "Human Confirmation Gates" "master prompt has human approval gates"
 require_text "prompt/master-prompt.md" "Final Validation Checklist" "master prompt has final validation checklist"
 
