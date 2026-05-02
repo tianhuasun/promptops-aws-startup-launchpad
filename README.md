@@ -12,6 +12,9 @@ This is not a chatbot, landing page, or toy app. It is a complete prompt package
 | --- | --- |
 | Challenge | DoraHacks AWS Prompt the Planet Challenge |
 | Artifact | Production-ready AWS prompt kit |
+| Complete Prompt | [`prompt/master-prompt.md`](prompt/master-prompt.md) |
+| Context & Documentation | [`prompt/`](prompt), [`docs/`](docs), [`examples/`](examples) |
+| AWS Services & Best Practices | [`terraform/`](terraform), [`docs/AWS_WELL_ARCHITECTED_MAPPING.md`](docs/AWS_WELL_ARCHITECTED_MAPPING.md) |
 | Main file | [`prompt/master-prompt.md`](prompt/master-prompt.md) |
 | Primary use case | Next.js + FastAPI + PostgreSQL MVP on AWS |
 | Target users | Startup founders, indie hackers, student builders, AI coding agent users |
@@ -22,7 +25,7 @@ This is not a chatbot, landing page, or toy app. It is a complete prompt package
 | Judge guide | [`docs/JUDGE_GUIDE.md`](docs/JUDGE_GUIDE.md) |
 | Repository-first review | [`docs/REVIEW_WITHOUT_VIDEO.md`](docs/REVIEW_WITHOUT_VIDEO.md) |
 
-If no demo video is provided, judges can still review the complete prompt kit through the repository-first review path in [`docs/REVIEW_WITHOUT_VIDEO.md`](docs/REVIEW_WITHOUT_VIDEO.md). A video can be added later if the submission form requires it.
+If no demo video is provided, judges can still review the complete prompt kit through the repository-first review path in [`docs/REVIEW_WITHOUT_VIDEO.md`](docs/REVIEW_WITHOUT_VIDEO.md). The repository itself contains the complete prompt, context documentation, AWS service mapping, examples, and validation scripts needed for review.
 
 ## What This Solves
 
@@ -46,7 +49,7 @@ No real AWS resources are created by this repository or its validation scripts.
 - `prompt/`: the complete prompt kit, including master prompt, system prompt, input template, output schema, validation checklist, and safety rules.
 - `examples/`: expected outputs for three AWS startup scenarios.
 - `terraform/`: example modules and a composed Next.js + FastAPI + PostgreSQL infrastructure plan.
-- `docs/`: design notes, Well-Architected mapping, security baseline, cost controls, troubleshooting, demo script, and DoraHacks submission copy.
+- `docs/`: judge guide, repository-first review path, design notes, Well-Architected mapping, security baseline, cost controls, troubleshooting, optional demo script, and DoraHacks submission copy.
 - `tests/`: prompt evaluation cases and expected-output checklists.
 - `scripts/`: local validation scripts that do not deploy AWS resources.
 
@@ -254,28 +257,13 @@ The prompt output is acceptable only when it includes:
 - No fake AWS identifiers.
 - Human approval gate.
 
-## Demo Script Summary
-
-The 3-minute demo:
-
-1. Open this README.
-2. Show the master prompt.
-3. Fill the input template.
-4. Show the expected output for Next.js + FastAPI + PostgreSQL.
-5. Show Terraform modules.
-6. Show safety and cost controls.
-7. Show validation scripts.
-8. Explain how this helps founders launch on AWS safely.
-
-See [`docs/DEMO_SCRIPT.md`](docs/DEMO_SCRIPT.md).
-
 ## Limitations
 
 - This project does not deploy real AWS resources.
 - Terraform examples are designed for static review and formatting validation first.
 - Cost estimates are planning estimates, not AWS billing guarantees.
 - Production environments still require security review, account review, and workload-specific hardening.
-- Demo video URL and DoraHacks BUIDL URL remain placeholders until the user publishes them.
+- An optional script is available in [`docs/OPTIONAL_DEMO_SCRIPT.md`](docs/OPTIONAL_DEMO_SCRIPT.md) if a submission form requests a video, but the primary review path is the GitHub repository.
 
 ## References
 

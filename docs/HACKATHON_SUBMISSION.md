@@ -1,6 +1,6 @@
 # DoraHacks Submission Copy
 
-Copy the sections below into the DoraHacks submission form. Replace only the URL placeholders that are still marked as `TODO`.
+Copy the sections below into the DoraHacks submission form. The repository is the primary review artifact.
 
 ## Project Name
 
@@ -85,31 +85,34 @@ The expected output is a reviewable AWS MVP launch package, not a claim that inf
 - Finite log retention.
 - Human approval gates before `terraform apply`, `terraform destroy`, DNS changes, production database changes, or budget increases.
 - Cost estimates are planning ranges, not billing guarantees.
-- Unknown account-specific values are written as `TODO` rather than fabricated.
+- Unknown account-specific values are explicitly marked as missing rather than fabricated.
 
 ## Demo Instructions
 
-1. Open `README.md` for the project overview.
-2. Open `prompt/master-prompt.md` and show the complete prompt contract.
-3. Open `prompt/user-input-template.md` and show the non-secret startup MVP input.
-4. Open `examples/nextjs-fastapi-postgres/expected-output/architecture.md` to show the expected AI output.
-5. Open `terraform/examples/nextjs-fastapi-postgres/main.tf` to show the reviewable Terraform example.
-6. Open `docs/SECURITY_BASELINE.md` and `docs/COST_CONTROL.md` to show safety and cost guardrails.
-7. Run `bash scripts/test-all.sh` to show local validation.
+Use the repository-first review path:
 
-No real AWS resources are created during the demo.
+1. Open `README.md` for the project overview.
+2. Open `docs/JUDGE_GUIDE.md` for the 3-minute and 10-minute review paths.
+3. Open `docs/REVIEW_WITHOUT_VIDEO.md` for repository-first review guidance.
+4. Open `prompt/master-prompt.md` to inspect the complete prompt.
+5. Open `prompt/user-input-template.md` to inspect the non-secret startup MVP input.
+6. Open `examples/nextjs-fastapi-postgres/expected-output/architecture.md` to inspect the expected AI output.
+7. Open `terraform/examples/nextjs-fastapi-postgres/main.tf` to inspect the reviewable Terraform example.
+8. Run `bash scripts/test-all.sh` for local validation.
+
+No real AWS resources are created during local review or validation.
 
 ## GitHub URL
 
 https://github.com/tianhuasun/promptops-aws-startup-launchpad
 
-## Demo Video URL
+## Website URL
 
-TODO: add demo video URL after recording
+https://github.com/tianhuasun/promptops-aws-startup-launchpad
 
-## DoraHacks BUIDL URL
+## Demo Video
 
-TODO: add DoraHacks BUIDL URL after submission page is created
+Demo video is not included because the public submission requirements focus on the complete prompt, context documentation, and AWS best-practice alignment. The repository includes a repository-first review path in `docs/JUDGE_GUIDE.md` and `docs/REVIEW_WITHOUT_VIDEO.md`.
 
 ## Future Roadmap
 

@@ -47,4 +47,4 @@ No real AWS credentials are required.
 
 ## Safety Note
 
-This is a repository-first review path. It does not claim that a demo video is unnecessary for every submission flow. If the DoraHacks submission form requests a video, use `docs/DEMO_SCRIPT.md` to record one without creating real AWS resources.
+This is a repository-first review path. It does not claim that a demo video is unnecessary for every submission flow. If the DoraHacks submission form requests a video, `docs/OPTIONAL_DEMO_SCRIPT.md` is available as a non-deployment script.
